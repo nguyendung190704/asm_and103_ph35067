@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:backgroundTint="#D0DFE1">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin sinh viên"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:background="#03A9F4"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/imgAvatarSV"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/img_1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:text="Mã sinh viên :"/>
+    <EditText
+        android:id="@+id/edtMaSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Ví dụ : PH12345 "
+        android:inputType="textEmailAddress"
+        android:background="@drawable/border"
+        android:padding="8dp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:text="Tên sinh viên :"/>
+    <EditText
+        android:id="@+id/edtNameSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Ví dụ : Nguyễn Văn A "
+        android:inputType="textEmailAddress"
+        android:background="@drawable/border"
+        android:padding="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:text="Điểm trung bình :"/>
+    <EditText
+        android:id="@+id/edtDiemTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Ví dụ : 8.0 "
+        android:inputType="textEmailAddress"
+        android:background="@drawable/border"
+        android:padding="8dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:text="Ảnh sinh viên :"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edtAvatar"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Ví dụ : qưerty123.jpg "
+            android:inputType="textEmailAddress"
+            android:background="@drawable/border"
+            android:text="/storage/emulated/0/Download/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+            android:padding="8dp"/>
+        <Button
+            android:id="@+id/btnChonAnh"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#FF5722"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:text="File"/>
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:text="Back"/>
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#2196F3"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:text="Save"/>
+    </LinearLayout>
+
+</LinearLayout>

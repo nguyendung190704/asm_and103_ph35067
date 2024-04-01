@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Danh sách sinh viên"
+        android:textSize="24dp"
+        android:textColor="#2196F3"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        >
+        <EditText
+            android:id="@+id/ed_search"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:inputType="text"
+            android:drawableEnd="@drawable/ic_search"
+            android:background="@drawable/custom_edtext"
+            android:hint="Tìm kiếm theo mã sinh viên"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            />
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_tang"
+            android:backgroundTint="#00000000"
+            android:id="@+id/student_tang"/>
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_giam"
+            android:backgroundTint="#00000000"
+            android:id="@+id/student_giam"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvSV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fltadd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#2196F3"
+        android:foregroundGravity="center"
+        android:src="@drawable/img_2"/>
+
+</FrameLayout>
